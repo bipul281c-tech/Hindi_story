@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://www.quick.dailymeditationguide.com"),
+  metadataBase: new URL("https://hindi-story.vercel.app"),
   alternates: {
     canonical: "/",
     types: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Hindi Story Audiobook | Immersive Audio Stories",
     description:
       "Immersive Hindi audio stories, audiobooks, and narratives designed to entertain, inspire, and transport you.",
-    url: "https://www.quick.dailymeditationguide.com",
+    url: "https://hindi-story.vercel.app",
     siteName: "Hindi Story Audiobook",
     images: [
       {
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
     other: [
-      { rel: "mask-icon", url: "/logo.svg", color: "#A3D1A0" },
+      { rel: "mask-icon", url: "/logo.svg", color: "#E68A00" },
     ],
   },
   manifest: "/site.webmanifest",
@@ -100,7 +100,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport = {
-  themeColor: "#A3D1A0",
+  themeColor: "#E68A00",
 }
 
 export default function RootLayout({

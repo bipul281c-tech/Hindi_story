@@ -67,7 +67,7 @@ export async function generateMetadata({ params }: PlayPageProps): Promise<Metad
     }
   }
 
-  const baseUrl = 'https://www.quick.dailymeditationguide.com'
+  const baseUrl = 'https://hindi-story.vercel.app'
   const playUrl = `${baseUrl}/play/${story.id}`
   const seoTitle = createSeoTitle(story.title)
   const seoDescription = createSeoDescription(story.title, story.description, story.keywords || [])
@@ -173,7 +173,7 @@ export default async function PlayPage({ params }: PlayPageProps) {
       name: "Hindi Story Audiobook",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.quick.dailymeditationguide.com/logo.svg",
+        url: "https://hindi-story.vercel.app/logo.svg",
       },
     },
     "breadcrumb": {
@@ -183,19 +183,19 @@ export default async function PlayPage({ params }: PlayPageProps) {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.quick.dailymeditationguide.com"
+          "item": "https://hindi-story.vercel.app"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Library",
-          "item": "https://www.quick.dailymeditationguide.com/library"
+          "item": "https://hindi-story.vercel.app/library"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": story.title,
-          "item": `https://www.quick.dailymeditationguide.com/play/${story.id}`
+          "item": `https://hindi-story.vercel.app/play/${story.id}`
         }
       ]
     }

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllStories } from '@/lib/stories'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = 'https://www.quick.dailymeditationguide.com'
+    const baseUrl = 'https://hindi-story.vercel.app'
     const stories = await getAllStories()
 
     // Static pages

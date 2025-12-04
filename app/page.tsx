@@ -24,10 +24,10 @@ export default async function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Hindi Story Audiobook",
-    url: "https://www.quick.dailymeditationguide.com",
+    url: "https://hindi-story.vercel.app",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://www.quick.dailymeditationguide.com/search?q={search_term_string}",
+      target: "https://hindi-story.vercel.app/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
     publisher: {
@@ -35,7 +35,7 @@ export default async function Home() {
       name: "Hindi Story Audiobook",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.quick.dailymeditationguide.com/logo.svg",
+        url: "https://hindi-story.vercel.app/logo.svg",
       },
     },
   }

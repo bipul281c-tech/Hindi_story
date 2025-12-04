@@ -9,7 +9,7 @@ Daily Meditation Guide is a comprehensive meditation platform offering immersive
 audio experiences designed to help you focus, breathe, and restore balance to 
 your day. Access hundreds of guided meditations anytime, anywhere.
 
-Website: www.quick.dailymeditationguide.com
+Website: hindi-story.vercel.app
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -144,7 +144,7 @@ Take mindful breaks without leaving your browser!
 📞 GET STARTED TODAY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🌐 Visit: www.quick.dailymeditationguide.com
+🌐 Visit: hindi-story.vercel.app
 🔌 Install Browser Extension: Available for Chrome
 📚 Explore Full Library: Hundreds of meditations waiting for you
 

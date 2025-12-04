@@ -4,96 +4,107 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Custom color palette */
-  --celadon: #A3D1A0;
-  --peach-fuzz: #FEC6AF;
-  --celadon-2: #9AC79E;
+  /* Hindi Story Color Palette */
+  --saffron: #E68A00;       /* Primary: Energy, Spirituality */
+  --saffron-light: #FF9933;
+  --deep-red: #8B2E2E;      /* Secondary: Tradition, Richness */
+  --cream: #FDFBF7;         /* Background: Old Paper, Storytelling */
+  --dark-brown: #3E2723;    /* Foreground: Organic Text */
+  --gold: #FFC107;          /* Accent: Turmeric/Gold */
+  --terracotta: #D87C5A;    /* Muted Accent */
 
-  /* Derived colors from palette */
-  --celadon-light: #c8e4c6;
-  --celadon-dark: #7ab877;
-  --peach-light: #ffe0d4;
-  --peach-dark: #e5a088;
+  /* Derived colors for compatibility */
+  --celadon: var(--saffron); /* Mapping old var to new for safety */
+  --peach-fuzz: var(--deep-red);
+  --celadon-2: var(--gold);
 
-  /* Updated colors for serene meditation theme */
-  --background: #fefdfb;
-  --foreground: #3d4a3d;
-  --card: #ffffff;
-  --card-foreground: #2d3a2d;
-  --popover: #ffffff;
-  --popover-foreground: #2d3a2d;
-  --primary: var(--celadon);
-  --primary-foreground: #1a2e1a;
-  --secondary: var(--peach-fuzz);
-  --secondary-foreground: #4a3028;
-  --muted: #f5f7f4;
-  --muted-foreground: #6b7a6b;
-  --accent: var(--celadon-2);
-  --accent-foreground: #1a2e1a;
-  --destructive: #e54d4d;
-  --destructive-foreground: #ffffff;
-  --border: #dce8da;
-  --input: #dce8da;
-  --ring: var(--celadon);
-  --chart-1: var(--celadon);
-  --chart-2: var(--peach-fuzz);
-  --chart-3: var(--celadon-2);
-  --chart-4: var(--celadon-light);
-  --chart-5: var(--peach-light);
+  /* Semantic Colors */
+  --background: var(--cream);
+  --foreground: var(--dark-brown);
+  --card: #FFFFFF;
+  --card-foreground: #4E342E;
+  --popover: #FFFFFF;
+  --popover-foreground: #4E342E;
+  --primary: var(--saffron);
+  --primary-foreground: #FFFFFF;
+  --secondary: var(--deep-red);
+  --secondary-foreground: #FFFFFF;
+  --muted: #F5F0E6; /* Warm muted beige */
+  --muted-foreground: #8D6E63;
+  --accent: var(--gold);
+  --accent-foreground: #3E2723;
+  --destructive: #C62828;
+  --destructive-foreground: #FFFFFF;
+  --border: #E6DCC8; /* Warm border */
+  --input: #E6DCC8;
+  --ring: var(--saffron);
+  
+  --chart-1: var(--saffron);
+  --chart-2: var(--deep-red);
+  --chart-3: var(--gold);
+  --chart-4: var(--terracotta);
+  --chart-5: #8D6E63;
+
   --radius: 0.625rem;
-  --sidebar: #f8faf7;
-  --sidebar-foreground: #2d3a2d;
-  --sidebar-primary: var(--celadon);
-  --sidebar-primary-foreground: #1a2e1a;
-  --sidebar-accent: var(--celadon-2);
-  --sidebar-accent-foreground: #1a2e1a;
-  --sidebar-border: #dce8da;
-  --sidebar-ring: var(--celadon);
+  
+  --sidebar: #F8F5F0;
+  --sidebar-foreground: #3E2723;
+  --sidebar-primary: var(--saffron);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F0EAE0;
+  --sidebar-accent-foreground: #3E2723;
+  --sidebar-border: #E6DCC8;
+  --sidebar-ring: var(--saffron);
 }
 
 .dark {
-  --celadon: #7ab877;
-  --peach-fuzz: #e5a088;
-  --celadon-2: #6aad68;
+  /* Dark Mode: Warm Night Theme */
+  --saffron: #FFB74D;
+  --saffron-light: #FFCC80;
+  --deep-red: #EF9A9A; /* Softer red for dark mode */
+  --cream: #1E1B1A;    /* Dark Espresso Background */
+  --dark-brown: #ECE0D1; /* Warm Off-White Text */
+  --gold: #FFD54F;
+  --terracotta: #FFAB91;
 
-  --celadon-light: #8fc48c;
-  --celadon-dark: #5a9857;
-  --peach-light: #f0b8a0;
-  --peach-dark: #c88a70;
+  --celadon: var(--saffron);
+  --peach-fuzz: var(--deep-red);
+  --celadon-2: var(--gold);
 
-  /* Very Dark Mode Colors */
-  --background: #050505;
-  --foreground: #e8efe8;
-  --card: #0a0a0a;
-  --card-foreground: #e8efe8;
-  --popover: #0a0a0a;
-  --popover-foreground: #e8efe8;
-  --primary: var(--celadon);
-  --primary-foreground: #050505;
-  --secondary: var(--peach-fuzz);
-  --secondary-foreground: #050505;
-  --muted: #121212;
-  --muted-foreground: #888888;
-  --accent: #121212;
-  --accent-foreground: #e8efe8;
-  --destructive: #7f1d1d;
-  --destructive-foreground: #ffffff;
-  --border: #1f1f1f;
-  --input: #1f1f1f;
-  --ring: var(--celadon);
-  --chart-1: var(--celadon);
-  --chart-2: var(--peach-fuzz);
-  --chart-3: var(--celadon-2);
-  --chart-4: var(--celadon-light);
-  --chart-5: var(--peach-light);
-  --sidebar: #050505;
-  --sidebar-foreground: #e8efe8;
-  --sidebar-primary: var(--celadon);
-  --sidebar-primary-foreground: #050505;
-  --sidebar-accent: #121212;
-  --sidebar-accent-foreground: #e8efe8;
-  --sidebar-border: #1f1f1f;
-  --sidebar-ring: var(--celadon);
+  --background: #120F0E; /* Very dark warm brown */
+  --foreground: #ECE0D1;
+  --card: #1E1B1A;
+  --card-foreground: #ECE0D1;
+  --popover: #1E1B1A;
+  --popover-foreground: #ECE0D1;
+  --primary: var(--saffron);
+  --primary-foreground: #1E1B1A;
+  --secondary: var(--deep-red);
+  --secondary-foreground: #1E1B1A;
+  --muted: #2D2624;
+  --muted-foreground: #A1887F;
+  --accent: #2D2624;
+  --accent-foreground: #ECE0D1;
+  --destructive: #EF5350;
+  --destructive-foreground: #FFFFFF;
+  --border: #3E3430;
+  --input: #3E3430;
+  --ring: var(--saffron);
+  
+  --chart-1: var(--saffron);
+  --chart-2: var(--deep-red);
+  --chart-3: var(--gold);
+  --chart-4: var(--terracotta);
+  --chart-5: #A1887F;
+
+  --sidebar: #0F0C0B;
+  --sidebar-foreground: #ECE0D1;
+  --sidebar-primary: var(--saffron);
+  --sidebar-primary-foreground: #1E1B1A;
+  --sidebar-accent: #2D2624;
+  --sidebar-accent-foreground: #ECE0D1;
+  --sidebar-border: #3E3430;
+  --sidebar-ring: var(--saffron);
 }
 
 @theme inline {
@@ -104,13 +115,18 @@
   --font-mono: "Geist Mono", "Geist Mono Fallback";
 
   /* Custom palette colors for direct use */
-  --color-celadon: var(--celadon);
-  --color-peach: var(--peach-fuzz);
-  --color-celadon-2: var(--celadon-2);
-  --color-celadon-light: var(--celadon-light);
-  --color-celadon-dark: var(--celadon-dark);
-  --color-peach-light: var(--peach-light);
-  --color-peach-dark: var(--peach-dark);
+  --color-saffron: var(--saffron);
+  --color-saffron-light: var(--saffron-light);
+  --color-deep-red: var(--deep-red);
+  --color-cream: var(--cream);
+  --color-dark-brown: var(--dark-brown);
+  --color-gold: var(--gold);
+  --color-terracotta: var(--terracotta);
+
+  /* Keeping old names mapped for backward compatibility if needed */
+  --color-celadon: var(--saffron);
+  --color-peach: var(--deep-red);
+  --color-celadon-2: var(--gold);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

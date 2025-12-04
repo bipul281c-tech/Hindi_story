@@ -5,7 +5,7 @@ import type { StoryWithId } from "@/types/story"
 export const dynamic = 'force-dynamic'
 export const revalidate = 3600 // Revalidate every hour
 
-const SITE_URL = "https://www.quick.dailymeditationguide.com"
+const SITE_URL = "https://hindi-story.vercel.app"
 const SITE_TITLE = "Hindi Story Audiobook"
 const SITE_DESCRIPTION = "Immersive audio landscapes, guided stories, and sleep stories designed to help you focus, breathe, and restore balance to your day."
 
