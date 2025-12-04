@@ -109,7 +109,33 @@ curl http://localhost:3000/api/stories?offset=2&limit=2
 
 ---
 
-### 2. Get Story by ID
+### 2. Stream Audio (Range Request Support)
+
+Stream audio for a specific story with support for seeking (HTTP Range requests).
+
+**Endpoint:** `GET /api/audio/{id}`
+
+**Path Parameters:**
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `id` | number | Yes | Unique story identifier |
+
+**Headers:**
+- Supports `Range` header for seeking.
+
+**Response:**
+- Returns audio stream (audio/mpeg).
+- Status: `200 OK` or `206 Partial Content`.
+
+**Example:**
+```bash
+curl -I -H "Range: bytes=0-100" http://localhost:3000/api/audio/988693911
+```
+
+---
+
+### 3. Get Story by ID
 
 Retrieve a single story by its unique ID.
 
