@@ -73,9 +73,10 @@ export async function generateMetadata({ params }: PlayPageProps): Promise<Metad
   const seoDescription = createSeoDescription(story.title, story.description, story.keywords || [])
 
   // Ensure thumbnail is absolute URL
-  const thumbnailUrl = story.thumbnail.startsWith('http')
-    ? story.thumbnail
-    : `${baseUrl}${story.thumbnail}`
+  const thumbnail = story.thumbnail || '/images/placeholder.webp' // Fallback if null
+  const thumbnailUrl = thumbnail.startsWith('http')
+    ? thumbnail
+    : `${baseUrl}${thumbnail}`
 
   return {
     title: seoTitle,

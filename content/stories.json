@@ -75,14 +75,6 @@
     "processed_at": "2025-12-04 11:29:24"
   },
   {
-    "title": "ERROR",
-    "audio_link": null,
-    "thumbnail": null,
-    "description": "Failed to process: Whisk API Request Failed: Bad Request (400): {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"Request contains an invalid argument.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"PUBLIC_ERROR_PROMINENT_PEOPLE_FILTER_FAILED\"\n      }\n    ]\n  }\n}\n",
-    "keywords": [],
-    "status": "failed"
-  },
-  {
     "title": "मायका टूटे पर ससुराल ना टूटे",
     "audio_link": "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/API Audio/1764828060_temp_audio_1764827979.mp3",
     "thumbnail": "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/images/1764828068_gen_img_1764828060.webp",
